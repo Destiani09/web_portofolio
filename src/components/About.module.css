@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&display=swap');
+
+.about {
+  text-align: center;
+  padding: 2rem;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.about h2 {
+  font-family: 'Dancing Script', cursive;
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.pp {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 1.3rem;
+}
+
+.bio {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 2.5rem;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.skillItem {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.icon {
+  font-size: 2rem;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.2);
+}
+
+.pendidikanList {
+  list-style-type: disc;
+  padding-left: 1.5rem;
+  max-width: 600px;
+  margin: 0 auto 2rem auto;
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.pendidikanList li {
+  margin-bottom: 0.5rem;
+  font-size: 1.1rem;
+  margin-left: 150px;
+  margin-bottom: 0.5rem;
+}
+
+.educationIcon {
+  margin-right: 10px;
+  font-size: 2rem;
+  vertical-align: middle;
+}

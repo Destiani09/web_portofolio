@@ -1,0 +1,106 @@
+.projects {
+  padding: 2rem;
+  text-align: center;
+  align-items: center;
+} 
+
+.projects h2 {
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+}
+
+.projectGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  align-items: start;
+  justify-content: center;
+  width: 100%;
+  max-width: 1200px; 
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+.projectCard {
+  background-color: #fffc31;
+  border-radius: 12px;
+  padding: 1.1rem;
+  width: 100%;
+  max-width: 350px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+  text-align: center;
+}
+
+.projectCard h3 {
+  font-size: 1.8rem;
+  color: #0077ff;
+  margin-bottom: 1rem;
+}
+
+.carouselContainer {
+  margin: 1rem 0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.carouselContainer img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+  display: block;
+  margin: 0 auto;
+}
+
+.detail {
+  margin-top: 1rem;
+}
+
+.detail p {
+  margin: 0.5rem 0;
+}
+
+.linkButton {
+  display: inline-block;
+  margin-top: 1rem;
+  background-color: #28a745;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.linkButton:hover {
+  background-color: #81fd6e;
+}
+
+.detailButton {
+  margin-top: 1rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.detailButton:hover {
+  background-color: #0056b3;
+}
+
+.projectGrid::-webkit-scrollbar {
+  height: 8px;
+}
+
+.projectGrid::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.projectGrid::-webkit-scrollbar-track {
+  background: #f0f0f0;
+}

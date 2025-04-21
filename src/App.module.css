@@ -1,0 +1,135 @@
+.light {
+    background-color: #E0F7FA;
+    color: #004D40;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.dark {
+    background-color: #121212;
+    color: #f0f8ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+  
+.header {
+    position: sticky;
+    color: #1b1a1a;
+    top: 0;
+    z-index: 1000;
+    background-color: #4fa2f5;
+    padding: 1rem 2rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+  
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+  
+.navLinks {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin: 0;
+    padding: 0;
+}
+  
+.navLinks li a {
+    text-decoration: none;
+    color: inherit;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+  
+.navLinks li a:hover {
+    color: #0077ff;
+}
+  
+.toggleButton {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    background-color: #fffc31;
+    color: #3a3434;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+  
+.toggleButton:hover {
+    background-color: #edfc1f;
+}
+
+.main {
+    width: 100vw;
+    min-height: 100vh;
+    padding: 2rem;
+    box-sizing: border-box;
+    overflow-x: hidden;
+}
+  
+.section {
+    padding: 4rem 0;
+    border-bottom: 1px solid rgb(0, 0, 0);
+}
+  
+.section:last-child {
+    border-bottom: none;
+}
+
+.projects {
+    text-align: center;
+    padding: 4rem 1rem;
+    background-color: inherit;
+    color: inherit;
+}
+
+.projectCard {
+    background-color: #ffffff; 
+    color: #000;  
+    border-radius: 12px;
+    padding: 1.5rem;
+    width: 350px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+    text-align: left;
+}
+
+.projectCard h3 {
+    font-size: 1.8rem;
+    color: #0077ff;
+    margin-bottom: 1rem;
+}
+
+.carouselContainer img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .navLinks {
+      flex-direction: column;
+      gap: 0.75rem;
+      margin-top: 1rem;
+    }
+  
+    .main {
+      padding: 1rem;
+    }
+  
+    .toggleButton {
+      align-self: flex-end;
+    }
+}
